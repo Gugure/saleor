@@ -32,7 +32,7 @@ jobs:
       - deploy:
           name: Push Docker image
           command: |
-            docker login -u $DOCKERCLOUD_USER -p $DOCKERCLOUD_PASS
+            docker login -u $gugure -p $Foisorului20
             docker tag mirumee/saleor:latest mirumee/saleor:$CIRCLE_SHA1
             docker push mirumee/saleor:$CIRCLE_SHA1
             docker push mirumee/saleor:latest
